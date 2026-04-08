@@ -14,7 +14,8 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => LoginPage()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) =>
+          LoginPage()));
     });
   }
 

@@ -1,11 +1,13 @@
 
+import 'package:blocwithcleanarch/core/di/injection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/di/injection.dart';
 import 'bloc/movie_bloc.dart';
 import 'details_page.dart';
 
 class DashboardPage extends StatelessWidget {
+  const DashboardPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -23,7 +25,7 @@ class DashboardPage extends StatelessWidget {
                   return ListTile(
                     title: Text(movie.title),
                     onTap: () {
-                      Navigator.push(_, MaterialPageRoute(
+                      Navigator.push(context, MaterialPageRoute(
                         builder: (_) => DetailsPage(movie: movie),
                       ));
                     },
