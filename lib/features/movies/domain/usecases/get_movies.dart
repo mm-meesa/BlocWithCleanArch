@@ -8,6 +8,6 @@ class GetMovies {
   GetMovies(this.repository);
 
   Future<List<Movie>> call() {
-    return repository.getMovies();
+    return repository.callGetMoviesRepo();
   }
 }

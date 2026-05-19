@@ -1,4 +1,5 @@
 
+import 'package:blocwithcleanarch/features/colors/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 import '../../auth/presentation/login_page.dart';
 
@@ -15,7 +16,7 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
     Future.delayed(Duration(seconds: 2), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) =>
-          LoginPage()));
+          MainScreen()));
     });
   }
 
