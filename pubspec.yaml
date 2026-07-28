@@ -23,7 +23,7 @@ dependencies:
 
   firebase_core: ^4.6.0
   firebase_auth: ^6.4.0
-  firebase_database: ^12.2.0
+  firebase_database: any
 
   # Permission handling
   permission_handler: ^11.3.1
@@ -35,7 +35,7 @@ dependencies:
   cached_network_image: ^3.3.1
 
   # Image gallery saver (replaces Android save-to-gallery)
-  image_gallery_saver: ^2.0.3
+  image_gallery_saver_plus: any
 
   # Share (replaces Android share intent)
   share_plus: ^12.0.2
@@ -46,6 +46,8 @@ dependencies:
   # Responsive sizing (replaces sdp-android / ssp-android)
   flutter_screenutil: ^5.9.1
 
+  dio: ^5.9.2 # Android iOS Linux macOS web Windows
+  shared_preferences:
 
 dev_dependencies:
   flutter_test:

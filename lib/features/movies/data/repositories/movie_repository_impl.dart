@@ -8,6 +8,7 @@ class MovieRepositoryImpl implements MovieRepository {
 
   MovieRepositoryImpl(this.remote);
 
+
   @override
   Future<List<Movie>> callGetMoviesRepo() async {
     return await remote.callGetMoviesApi();

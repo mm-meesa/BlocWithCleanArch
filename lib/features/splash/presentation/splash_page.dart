@@ -1,7 +1,7 @@
 
-import 'package:blocwithcleanarch/features/colors/screens/main_screen.dart';
+import 'package:blocwithcleanarch/features/fincluddata/presentation/screens/fincluddata_screen.dart';
+import 'package:blocwithcleanarch/features/fintechData/presentation/presentaiont_screen.dart';
 import 'package:flutter/material.dart';
-import '../../auth/presentation/login_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
@@ -16,12 +16,12 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
     Future.delayed(Duration(seconds: 2), () {
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) =>
-          MainScreen()));
+          PresentationScreen()));
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("Splash Screen")));
+    return Scaffold(body: Center(child: Text("Welcome \n\n\n to \n\n\n Splash Screen")));
   }
 }
